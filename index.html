@@ -1,0 +1,387 @@
+<body>
+    <section>
+        
+<img style="height: 50%; width: 150%;" src="durga.png" alt="Durga puja" 
+class="durga">
+        <header>
+            <a href="#" class="logo">Navratri</a>
+            <div class="toggle"></div>
+            <ul class="navigation">
+                <li>
+<a href="#" style="--i:1;" class="active">Home
+</a>
+                </li>
+                <li>
+     <a href="https://somu01544.github.io/somu/" style="--i:2;">SOMU</a>
+                </li>
+                <li>
+   <a href="https://www.linkedin.com/in/soumya-ranjan-sethi-578021211/" style="--i:3;">CONTACT</a>
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+<div class="textBox">
+<h2>Happy Durga Puja</h2>
+ <p>Durga Pooja is a Hindu festival celebration
+ of the Mother Goddess and the victory of the 
+warrior Goddess Durga over the demon Mahisasura. 
+The festival represents female power as 'Shakti'
+ in the Universe. It is a festival of Good over 
+Evil.Durga Pooja is one of the greatest festivals 
+of India.</p>
+          <a href="puja.mp4">Video</a>
+
+            </div>
+
+        </div>
+        <div class="sci">
+            <li>
+<a href="https://github.com/Somu01544" style="--i:12;">
+<img style="height: 60px; width: 60px; " src="GitHub_logo.png" alt="facebook">
+</a>
+            </li>
+            <li>
+<a href="https://www.linkedin.com/in/soumya-ranjan-sethi-578021211/" style="--i:13;">
+<img style="height: 60px; width: 60px; "src="linkedin.png" alt="twitter">
+</a>
+            </li>
+            <li>
+<a href="https://www.instagram.com/soumyaranjan_s.s_/" style="--i:14;">
+<img style="height: 60px; width: 60px; "src="instagram.png" 
+alt="instagram"></a>
+            </li>
+        </div>
+    </section>
+    <style>
+        @import url(https://fonts.googleapis.com/
+css2?family=Nunito:wght@100;200;300;400;500;600;
+800;900&display=swap);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 80vh;
+            padding: 100px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        header .logo {
+            position: relative;
+            color: #ff5e5e;
+            display: inline-block;
+            font-size: 2em;
+            text-decoration: none;
+            font-weight: 800;
+            opacity: 0;
+ animation: slide_left 0.5s linear forwards;
+            animation-delay: 0.2s;
+        }
+        
+        @keyframes slide_left {
+            0% {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+        
+        header ul {
+            position: relative;
+            display: flex;
+        }
+        
+        header ul li {
+            list-style: none;
+        }
+        
+        header ul li a {
+            display: inline-block;
+            color: #d1660e;
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-left: 10px;
+            display: inline-block;
+            padding: 8px 18px;
+            text-decoration: none;
+            user-select: none;
+            opacity: 0;
+     animation: slide_back 0.5s linear forwards;
+     animation-delay: calc(0.2s * var(--i));
+        }
+        
+        @keyframes slide_back {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+        
+        header ul li a.active,
+        header ul li a:hover {
+            background: #d1660e;
+            color: #fff;
+            border-radius: 30px;
+        }
+        
+        .content {
+            position: relative;
+        }
+        
+        .content .textBox {
+            position: relative;
+            max-width: 550px;
+        }
+        
+        .content .textBox h2 {
+            color: #d1660f;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            line-height: 1.2em;
+            
+            font-weight: 700;
+            opacity: 0;
+  animation: slide_right 0.5s linear forwards;
+  animation-delay: 1s;
+        }
+        
+        @keyframes slide_right {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+        
+        .content .textBox p {
+            font-size: 1.2em;
+            color: #333;
+            opacity: 0;
+ animation: slide_left 0.5s linear forwards;
+            animation-delay: 1.75s;
+            width: 18em;
+        }
+        
+        .content .textBox a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #db2828;
+            color: #fff;
+            font-size: 1.2em;
+            border-radius: 40px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-decoration: none;
+            opacity: 0;
+ animation: slide_top 0.5s linear forwards;
+            animation-delay: 2s;
+        }
+        
+        @keyframes slide_top {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+        
+        .sci {
+            position: absolute;
+            bottom: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sci li {
+            list-style: none;
+        }
+        
+        .sci li a {
+            position: relative;
+            display: inline-block;
+            margin-right: 15px;
+            width: 50px;
+            height: 50px;
+            background: #db2828;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: 0.2s ease-in-out;
+            opacity: 0;
+    animation: slide_right 0.5s linear forwards;
+      animation-delay: calc(0.2s * var(--i));
+        }
+        
+        .sci li a img {
+            filter: invert(1);
+            transform: scale(0.5);
+        }
+        
+        .sci li a:hover {
+            transform: translateY(-10px);
+        }
+        
+        .durga {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 400px;
+            opacity: 0;
+     animation: fade_in 1s linear forwards;
+            animation-delay: 3.5s;
+        }
+        
+        @keyframes fade_in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @media(max-width:1200px) {
+            .durga {
+                max-width: 500px;
+            }
+        }
+        
+        @media(max-width:881px) {
+            section {
+                padding: 150px 20px;
+            }
+            header {
+                padding: 20px;
+            }
+            .navigation {
+                display: none;
+            }
+            .navigation.active {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+     backdrop-filter: opacity(0.8) blur(50px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            header ul li {
+                margin: 10px 0;
+            }
+            header ul li a {
+                margin-left: 0;
+                font-size: 1.5em;
+            }
+            .toggle {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+       background: url(images/redmenu.png);
+                background-size: 30px;
+                background-repeat: no-repeat;
+                background-position: center;
+                cursor: pointer;
+                z-index: 1000;
+            }
+            .toggle.active {
+     background: url(images/redclose.png);
+                background-size: 25px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            .durga {
+                max-width: 340px;
+            }
+            .content .textBox h2 {
+                font-size: 2.5em;
+            }
+        }
+        
+        @media (max-width:600px) {
+            .durga {
+                opacity: 0;
+   animation: fade_in 1s linear forwards;
+                animation-delay: 3s;
+            }
+            @keyframes fade_in {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            .content .textBox h2 {
+                font-size: 2em;
+            }
+            .content .textBox p {
+                font-size: 1em;
+            }
+            .content .textBox a {
+                display: inline-block;
+                margin-top: 20px;
+                padding: 10px 20px;
+                font-size: 1.1em;
+                border-radius: 40px;
+                font-weight: 700;
+            }
+        }
+        
+        @media (max-width:320px) {
+            .durga {
+                max-width: 340px;
+            }
+        }
+    </style>
+    <script>
+        const menuToggle = document.querySelector
+       ('.toggle');
+        const navigation = document.querySelector
+       ('.navigation');
+               menuToggle.onclick = function() {
+                   menuToggle.classList.toggle('active')
+                   navigation.classList.toggle('active')
+               }
+           </script>
+    </body>
